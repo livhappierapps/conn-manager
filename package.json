@@ -1,0 +1,26 @@
+{
+  "name": "@livhappierapps/conn-manager",
+  "version": "0.1.0",
+  "description": "Shared connection + memory layer for Middlemain, Eden Mux and Crash Pad. Zero runtime deps; Node 18+, React Native, browsers.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./memory": "./src/memory/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "private": true
+}
